@@ -1,0 +1,17 @@
+:root{
+     --white-color:#fff;
+     --accent-color:#03a9f4;
+     --heading-color: #b4ad9e;
+     --text-color: #626262;
+     --text-size: 14px;
+     --heading-text-size: 30px;
+     --button-text-size 20px
+    }
+
+
+
+    p {
+        margin: 10px 20px 35px 45px
+    }
+    
+    
