@@ -36,12 +36,16 @@
 .list-articles {
   list-style-type: none;
 }
+.text {
+  color: var(--text-color);
+}
 .main-article .signature {
   font-family: var(--signature-font);
   color: var(--artical-color);
   text-transform: uppercase;
 }
 .heading {
+  color: var(--text-color);
   font-size: var(--heading-text-size);
   font-weight: 400;
 }
