@@ -16,9 +16,11 @@
   line-height: var(--text-leading);
   font-family: var(--primary-font);
   text-transform: uppercase;
+  list-style-type: none;
 }
 .navigation-link {
   color: var(--text-color);
+  text-decoration: none;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -30,6 +32,9 @@
 .main-article {
   font-family: var(--primary-font);
   font-size: var(--text-size);
+}
+.list-articles {
+  list-style-type: none;
 }
 .main-article .signature {
   font-family: var(--signature-font);
