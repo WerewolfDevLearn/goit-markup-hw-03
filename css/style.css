@@ -8,6 +8,7 @@
   --heading-font-size: 36px;
   --color-white: #fff;
   --color-black: #000;
+  --color-grey: #eee;
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -15,6 +16,8 @@
   --background-color-dark: #2f303a;
   --background-color-light: #f5f4fa;
   --footer-adress-text-color: rgba(255, 255, 255, 0.6);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --header-line-color: #ececec;
 }
 
 body {
@@ -36,6 +39,24 @@ body {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.flex {
+  display: flex;
+}
+.hdr {
+  border-bottom: 1px solid var(--header-line-color);
+}
+
 .logo {
   font-family: var(--logo-font);
   font-size: var(--logo-font-size);
@@ -44,11 +65,17 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
+  text-shadow: 0px 4px 4px var(--shadow-color);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 15px;
+  margin-right: 93px;
 }
 
 .logo-accent {
   color: var(--accent-color);
 }
+
 .user-nav-list,
 .header-contacts-list,
 .footer-contact-list,
@@ -60,12 +87,32 @@ body {
   list-style: none;
 }
 
+.user-nav-list {
+  display: flex;
+  margin-top: 32px;
+  margin-right: 344px;
+  width: 281px;
+}
+
+.user-nav-item {
+  margin-right: 50px;
+}
+
+.user-nav-item:last-child {
+  margin-right: 0px;
+}
+
 .user-nav-link {
   color: inherit;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-top: 32px;
 }
 
 .header-contacts-link {
@@ -75,6 +122,15 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
+.header-contacts-list-item {
+  margin-right: 50px;
+}
+
+.header-contacts-list-item:last-child {
+  margin-right: 0px;
+}
+
 .header-contacts-link:hover,
 .header-contacts-link:focus,
 .user-nav-link:hover,
@@ -94,6 +150,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 106px;
 }
 
 .hero-button {
@@ -105,12 +166,31 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-color: transparent;
+  border-radius: 4px;
   cursor: pointer;
+  display: block;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 106px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px 0px var(--shadow-color);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-button-color);
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item {
+  width: 270px;
+  margin-right: 30px;
 }
 
 .feature-heading {
@@ -119,6 +199,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-discription {
@@ -133,7 +214,21 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
+
+.engagement-collection {
+  display: flex;
+}
+
+.engagement-collection-item {
+  margin-right: 30px;
+}
+
+.engagement-collection-item:last-child {
+  margin-right: 0px;
+}
+
 .team {
   background-color: var(--background-color-light);
 }
@@ -144,10 +239,22 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-list-item {
   background-color: var(--color-white);
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list-item:last-child {
+  margin-right: 0px;
 }
 
 .teammate-name {
@@ -155,6 +262,9 @@ body {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .teammate-profession {
@@ -162,9 +272,27 @@ body {
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Portfolio */
+.filter-list {
+  display: flex;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.filter-list-item {
+  margin-right: 8px;
+  box-shadow: ;
+}
+
+.filter-list-item:last-child {
+  margin-right: 0px;
+}
 
 .filter-button {
   font-family: inherit;
@@ -174,18 +302,52 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--background-color-light);
   cursor: pointer;
+  border: 0px;
   border-color: transparent;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--color-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px var(--shadow-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-list-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-list-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .project-link {
   text-decoration: none;
   color: var(--main-text-color);
+}
+
+.project-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--color-grey);
 }
 
 .project-name {
@@ -202,8 +364,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+.projects-list-item:hover .project-name,
+.projects-list-item:hover .project-type {
+  text-shadow: 0px 4px 4px var(--shadow-color);
+}
+
 .ftr {
   background-color: var(--background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -214,10 +383,20 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-adress {
   font-style: normal;
+}
+
+.footer-contact {
+  margin-bottom: 9px;
+}
+
+.footer-contact:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-contact-link {
