@@ -200,7 +200,7 @@ body {
 }
 
 .features-list-item {
-  width: 270px;
+  flex-basis: 270px;
   margin-right: 30px;
 }
 
@@ -222,6 +222,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.engagement {
+  padding-bottom: 94px;
+}
 
 .engagement-heading {
   font-size: var(--heading-font-size);
@@ -234,7 +237,6 @@ body {
 
 .engagement-collection {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .engagement-collection-item {
@@ -247,6 +249,7 @@ body {
 
 .team {
   background-color: var(--background-color-light);
+  padding-bottom: 94px;
 }
 
 .team-heading {
@@ -260,7 +263,6 @@ body {
 
 .team-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .team-list-item {
@@ -297,6 +299,11 @@ body {
 }
 
 /* Portfolio */
+
+.portfolio {
+  padding-bottom: 94px;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
@@ -338,11 +345,10 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .projects-list-item {
-  flex-basis: auto;
+  flex-basis: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -367,6 +373,7 @@ body {
   border: 1px;
   border-style: solid;
   border-color: var(--color-grey);
+  border-top: 0px;
 }
 
 .project-name {
@@ -382,11 +389,6 @@ body {
   font-size: var(--secondary-font-size);
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.projects-list-item:hover .project-name,
-.projects-list-item:hover .project-type {
-  text-shadow: 0px 4px 4px var(--shadow-color);
 }
 
 .ftr {
